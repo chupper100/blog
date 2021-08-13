@@ -1,0 +1,14 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: black;
+  margin-left: 0px;
+  text-align: center;
+  border: 3px green dashed;
+} 
+
+.tiktok-embed {
+  background-color: green;
+}
