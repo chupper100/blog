@@ -1,1 +1,1 @@
-console.log('Hello, why are you seeing this?')
+window.location.href = 'https://youtu.be/';
