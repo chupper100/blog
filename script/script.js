@@ -1,1 +1,1 @@
-window.location.href = 'https://youtu.be/';
+console.log("Hi!");
