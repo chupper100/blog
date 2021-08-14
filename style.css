@@ -18,11 +18,6 @@ h1 {
 a:hover {
   color: red;
 
-a.menu-button {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 a.button {
     color: black;
     background-color: none
@@ -34,6 +29,8 @@ a.button {
 }
 
 a.menu-button {
+    margin-left: 10px;
+    margin-right: 10px;
     color: black;
     background-color: none
     -webkit-appearance: button;
