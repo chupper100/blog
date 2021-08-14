@@ -1,9 +1,11 @@
 h1.text-404 {
     color: red;
     text-align: center;
+    font-size: large;
 }
 
 a {
     text-decoration: none;
+    text-align: center;
     font-size: 30px;
 }
