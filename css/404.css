@@ -2,3 +2,8 @@ h1.text-404 {
     color: red;
     text-align: center;
 }
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+}
