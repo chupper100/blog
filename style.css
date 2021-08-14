@@ -7,13 +7,10 @@ h1 {
     margin-left: 0px;
     text-align: center;
     border: 3px green dashed;
-}
-  
-  
-  
+}  
   
 a:hover {
-color: red;
+    color: red;
 }
 
 a.button {
