@@ -23,7 +23,7 @@ a.button {
 }
 
 a.menu-button {
-    margin-left: 10px;
+    /* margin-left: 10px; */
     /* margin-right: 10px; */
     color: black;
     background-color: none;
@@ -32,6 +32,6 @@ a.menu-button {
     appearance: button;
     text-decoration: none;
     color: initial;
-    /* float: right; */
+    float: right;
 }
   
