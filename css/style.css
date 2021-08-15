@@ -36,4 +36,7 @@ a.menu-button {
     float: right;
     font-size: 30px;
 }
-  
+
+a.contact-button {
+    color: black;
+}
