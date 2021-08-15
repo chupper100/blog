@@ -40,5 +40,9 @@ a.menu-button {
 a.contact-button {
     color: black;
     text-decoration: none;
-    
+
+}
+
+div.menu {
+    background-color: red;
 }
