@@ -46,3 +46,7 @@ a.contact-button {
 div.menu {
     background-color: transparent;
 }
+
+div.menu:hover {
+    background-color: white;
+}
