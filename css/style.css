@@ -45,11 +45,12 @@ a.contact-button {
 
 div.menu {
     background-color: transparent;
-    transition: background-color 1s;
+    transition: background-color 1s, border-radius 2s;
     /* Hey! */
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
 div.menu:hover {
+    border-radius: 8px;
     background-color: red;
 }
