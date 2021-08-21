@@ -45,6 +45,7 @@ a.contact-button {
 
 div.menu {
     background-color: transparent;
+    transition: color 1s;
 }
 
 div.menu:hover {
