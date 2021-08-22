@@ -54,3 +54,10 @@ div.menu:hover {
     border-radius: 8px;
     background-color: red;
 }
+
+div.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: grey;
+}
