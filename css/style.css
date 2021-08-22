@@ -62,3 +62,14 @@ div.footer {
     width: 100%;
     background-color: grey;
 }
+
+a.footer-contact {
+    text-decoration: none;
+    color: black;
+    transition: color 10s;
+}
+
+a.footer-contact:hover {
+    color: blue;
+}
+
