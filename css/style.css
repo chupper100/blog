@@ -52,7 +52,7 @@ div.menu {
 
 div.menu:hover {
     background-color: rgb(247 247 247);
-    box-shadow: 1px 3px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 3px 10px rgba(0,0,0,.5);
     /* border-radius: 8px;
     background-color: red; */
 }
