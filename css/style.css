@@ -51,8 +51,10 @@ div.menu {
 }
 
 div.menu:hover {
-    border-radius: 8px;
-    background-color: red;
+    background-color: rgb(247 247 247);
+    box-shadow: 1px 3px 3px rgba(0,0,0,.5);
+    /* border-radius: 8px;
+    background-color: red; */
 }
 
 div.footer {
@@ -66,10 +68,14 @@ div.footer {
 a.footer-contact {
     text-decoration: none;
     color: black;
-    transition: color 10s;
+    transition: color 2s;
+    text-align: center;
 }
 
 a.footer-contact:hover {
     color: blue;
 }
 
+h3.footer {
+    margin-top: 10px;
+}
