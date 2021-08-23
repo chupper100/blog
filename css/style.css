@@ -45,7 +45,7 @@ a.contact-button {
 
 div.menu {
     background-color: transparent;
-    transition: background-color 1s, border-radius 2s, box-shadow 1s;
+    transition: background-color 1s, border-radius 2s, box-shadow .5s;
     /* Hey! */
     border-radius: 3px;
 }
