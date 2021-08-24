@@ -1,5 +1,5 @@
 body {
-    background-color: green;
+    background-color: #48ff00;
 }
   
 h1 {
@@ -63,6 +63,11 @@ div.footer {
     bottom: 0;
     width: 100%;
     background-color: grey;
+    transition: background-color 1s;
+}
+
+div.footer:hover {
+    color: grey;
 }
 
 a.footer-contact {
