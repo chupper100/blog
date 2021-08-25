@@ -12,7 +12,7 @@ a {
 
 div.button {
     background-color: blue;
-    align-items: center;
     box-sizing: unset;
-    width: 30px;
+    height: fit-content;
+    width: fit-content;
 }
