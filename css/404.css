@@ -13,4 +13,6 @@ a {
 div.button {
     background-color: blue;
     align-items: center;
-box-sizing: unset;}
+    box-sizing: unset;
+    width: 30px;
+}
