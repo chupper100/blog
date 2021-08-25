@@ -8,3 +8,8 @@ a {
     text-align: center;
     font-size: 30px;
 }
+
+div.button {
+    background-color: blue;
+    align-items: center;
+}
