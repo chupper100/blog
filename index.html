@@ -7,6 +7,20 @@
   <title>I learn Python</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="script/script.js"> </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/google-places.js "></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places&amp;key=AIzaSyBADzh_7nSZfz6tynTDL47y2Jy1ihCemG4"></script>
+  <script>
+    jQuery(document).ready(function () {
+      $("#google-reviews").googlePlaces({
+        placeId: 'ChIJJwXs0qJ5oDER8M7YycmjuDQ',
+        render: ['reviews'],
+        min_rating: 5,
+        max_rows: 0
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -16,6 +30,7 @@
     <a href="/blog/blog" class="menu-button">Blog</a>
   </div>
   <h1>Hello!</h1>
+  <div id="google-reviews"></div>
 
   <footer>
     <div class="footer">
