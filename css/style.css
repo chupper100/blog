@@ -1,6 +1,11 @@
 body {
     background-image: url('https://niemvuilaptrinh.ams3.cdn.digitaloceanspaces.com/tao_footer_cho_website/Aare.svg');
 }
+
+nav {
+    background-color: blue;
+    height: 100px;
+}
   
 h1 {
     color: black;
@@ -45,16 +50,16 @@ a.contact-button {
 
 div.menu {
     background-color: transparent;
-    transition: background-color 1s, border-radius 2s, box-shadow .5s;
+    /* transition: background-color 1s, border-radius 2s, box-shadow .5s; */
     /* Hey! */
     border-radius: 3px;
 }
 
 div.menu:hover {
-    background-color: rgb(247 247 247);
+    /* background-color: rgb(247 247 247);
     box-shadow: 1px 3px 10px rgba(0,0,0,.5);
     border-radius: 5px;
-    background-color: #fd6234;
+    background-color: #fd6234; */
 }
 
 div.footer {
