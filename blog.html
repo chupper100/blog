@@ -4,9 +4,21 @@
 <head>
     <title>Blog</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
     <div class="menu">
         <a href="/" class="button">Home</a>
         <a href="/contact" class="menu-button">Contact</a>

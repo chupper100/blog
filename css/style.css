@@ -9,8 +9,8 @@ body {
 }
 
 nav {
-    background-color: #00d1eca2;
-    height: 100px;
+    background-color: aqua;
+    height: 90%;
     width: 100%;
 }
   
@@ -81,6 +81,9 @@ div.footer {
 div.footer:hover {
 }
 
+a:hover {
+    cursor: pointer;
+}
 a.footer-contact {
     text-decoration: none;
     color: black;
