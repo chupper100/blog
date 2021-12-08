@@ -99,3 +99,7 @@ h3.footer {
     margin-top: 10px;
 }
 
+ul {
+    margin: none;
+    padding: none;
+}

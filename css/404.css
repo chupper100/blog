@@ -1,10 +1,15 @@
 body {
     background-color: #212121;
 }
+*{
+    font-family: sans-serif;
 
-h1.text-404 {
-    color: red;
+}
+
+.text-404 {
+    color: whitesmoke;
     text-align: center;
+    margin-top: 15%;
 }
 
 a {
@@ -14,17 +19,14 @@ a {
     color: #fff;
 }
 
-div.button {
-    border-radius: 2px;
+.button {
+border-radius: 3px;
     background-color: black;
     box-sizing: unset;
     height: fit-content;
     width: fit-content;
 /*     box-shadow: 1px 3px 3px black; */
-    border: 1.5px solid rgb(11, 125, 255);
+    border: 1.5px solid rgb(42, 46, 51);
     transition: background-color .3s;
-}
-
-div.button:hover {
-    background-color: rgb(11, 125, 255);
+    margin: auto;
 }
