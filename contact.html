@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Contact | Chupper</title>
+    <title>Chupper</title>
     <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-boilerplate>
@@ -65,6 +65,7 @@
             }
         }
     </style><noscript>
+
         <style amp-boilerplate>
             body {
                 -webkit-animation: none;
@@ -74,11 +75,30 @@
             }
         </style>
     </noscript>
+    <style amp-custom>
+        li a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .nav_links a:visited {
+            color: white;
+        }
+
+        .nav_links {
+            list-style: none;
+        }
+
+        nav {
+            justify-content: space-between;
+
+        }
+    </style>
 </head>
 
 <body>
     <nav>
-        <ul>
+        <ul class="nav_links">
             <li><a href="/">Home</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/blog">Blog</a></li>
