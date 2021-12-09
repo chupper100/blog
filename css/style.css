@@ -4,6 +4,13 @@ body {
     background-color: grey;
 }
 
-ul li a {
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #24252A;
+}
+
+button li a {
     text-decoration: none;
 }
