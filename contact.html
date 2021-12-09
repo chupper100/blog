@@ -76,17 +76,40 @@
         </style>
     </noscript>
     <style amp-custom>
+        body {
+            background-color: #24252a;
+        }
+
         li a {
             text-decoration: none;
             cursor: pointer;
+            color: white;
+            margin: 5px;
+
         }
 
         .nav_links a:visited {
             color: white;
         }
 
+
         .nav_links {
             list-style: none;
+            background-color: black;
+            margin-top: 0px;
+            padding: 10px;
+        }
+
+        .nav_links li {
+            display: inline-block;
+        }
+
+        .nav_links li a {
+            transition: all 0.3s ease 0s;
+        }
+
+        .nav_links li a:hover {
+            color: #0088a9;
         }
 
         nav {
@@ -100,8 +123,8 @@
     <nav>
         <ul class="nav_links">
             <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a style="margin-left: 400px;" class="menu-button" href="/contact">Contact</a></li>
+            <li><a class="menu-button" href="/blog">Blog</a></li>
         </ul>
     </nav>
 </body>
