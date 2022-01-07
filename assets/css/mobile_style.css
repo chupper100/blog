@@ -1,0 +1,42 @@
+@media screen and (max-width: 480px) {
+    :root {
+        --side_margin_nav: 5px;
+    }
+    /* nav bar button */
+    .nav_links > li{
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: var(--side_margin_nav);
+    }
+
+    /* home button */
+    nav > li{
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: var(--side_margin_nav);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .nav_links > li {
+        display: none;
+        margin-top: 10px;
+        margin-right: var(--side_margin_nav);
+    }
+    .burger {
+        display: block;
+        float: right;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    
+    }
+    .burger div{
+        border-radius: 5px;
+        width: 30px;
+        height: 5px;
+        margin: 5px;
+        background-color: black;
+        transition: all 0.3s ease-in 0s;
+    
+    }
+}
