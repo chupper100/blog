@@ -9,6 +9,14 @@
     transition: all 0.3s ease;
 }
 
+nav {
+    position: fixed;
+    left: 3px;
+    right: 3px;
+    top: 0px;
+    border-bottom: #808080 solid ;
+}
+
 h1, h2, h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -24,7 +32,7 @@ a {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 24px;
     margin: 5px;
     color: #000000;
 }
@@ -54,6 +62,7 @@ nav > li{
     margin-left: var(--side_margin_nav);
 }
 
+/* Burder menu for mobile */
 .burger {
     display: none;
     float: right;
