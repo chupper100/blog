@@ -17,48 +17,76 @@ input.style.transform = 'translate(-50%, -50%)';
 
 input_box = div.querySelector('input');
 
-//input_box value on change 
+//get stored value
+var stored_value = localStorage.getItem('color');
+//check if value
+if (stored_value) {
+    changeColor(stored_value)
+    input_box.addEventListener("input", function (e) {
+        value = e.target.value;
+        changeColor(value)
+        localStorage.setItem('color', value);
+        // hexColor(value);
 
+    });
+} else {
+    input_box.addEventListener("input", function (e) {
+        value = e.target.value;
+        type = checkType(value);
+        localStorage.setItem('color', value);
+        if (type == 'rgb' || type == 'hsl' || type == 'cmyk') {
+            document.body.style.backgroundColor = type + value;
+        } else if (type == 'hex') {
+            hexColor(value);
+        } else if (type == 'name') {
+            document.body.style.backgroundColor = value;
+        }
+    });
 
-input_box.addEventListener("input", function (e) {
-    var value = e.target.value;
-    //check if value is empty
+}
 
+function changeColor(value) {
+    type = checkType(value);
+    if (type == 'rgb' || type == 'hsl' || type == 'cmyk') {
+        document.body.style.backgroundColor = type + value;
+    } else if (type == 'hex') {
+        hexColor(value);
+    } else if (type == 'name') {
+        document.body.style.backgroundColor = value;
+    }
+}
 
+//check type of color
+function checkType(value) {
     if (value.match(/^\((\d+),\s*(\d+),\s*(\d+)\)$/)) {
-        document.body.style.backgroundColor = 'rgb' + value;
-        console.log('rgb');
+        return 'rgb';
+    } else if (value.match(/^#([0-9a-f]{3}|[0-9a-f]{6})$/i)) {
+        return 'hex';
+    } else if (value.match(/^[a-zA-Z]+$/)) {
+        return 'name';
+    } else if (value.match(/^\((\d+),\s*(\d+)%,\s*(\d+)%\)$/)) {
+        return 'hsl';
+    } else if (value.match(/^\((\d+)%,\s*(\d+)%,\s*(\d+)%,\s*(\d+)%\)$/)) {
+        return 'cmyk';
+    }
+}
+
+// function
+function hexColor(value) {
+    document.body.style.backgroundColor = value;
+
+    changeColorOn = [
+        "a", "h1", "h2"
+    ];
+    changeColorOn.forEach(function (element) {
+        tag_element = document.querySelectorAll(element)
+        tag_element.forEach(function (element) {
+            element.style.color = getContrastColor(value);
+        })
+    });
+}
 
 
-    }
-    else if (value.match(/^#([0-9a-f]{3}|[0-9a-f]{6})$/i)) {
-        changeColorOn = [
-            "a", "h1", "h2"
-        ];
-        document.body.style.backgroundColor = value;
-        changeColorOn.forEach(function (element) {
-            tag_element = document.querySelectorAll(element)
-
-            tag_element.forEach(function (element) {
-                element.style.color = getContrastColor(value);
-            })   //change color of all elements
-
-        });
-        console.log('hex');
-    }
-    else if (value.match(/^[a-zA-Z]+$/)) {
-        document.body.style.backgroundColor = value;
-        console.log('text');
-    }
-    else if (value.match(/^\((\d+),\s*(\d+)%,\s*(\d+)%\)$/)) {
-        document.body.style.backgroundColor = 'hsl' + value;
-        console.log('hsl');
-    }
-    else if (value.match(/^\((\d+)%,\s*(\d+)%,\s*(\d+)%,\s*(\d+)%\)$/)) {
-        document.body.style.backgroundColor = 'cmyk' + value;
-        console.log('cmyk');
-    }
-});
 
 // get contrast color
 function getContrastColor(hex) {
