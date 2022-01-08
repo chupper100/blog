@@ -2,7 +2,6 @@ let div = document.createElement('div');
 div.innerHTML = '<h1>Enter A Color</h1><input type="text" value""/>'
 document.body.appendChild(div);
 let input = document.querySelector('input');
-
 //center div
 div.style.position = 'absolute';
 div.style.top = '45%';
