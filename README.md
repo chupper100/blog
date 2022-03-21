@@ -1,2 +1,1 @@
-# Welcome!
-Thank you for looking at my repository!
+[![CodeFactor](https://www.codefactor.io/repository/github/chupper100/chup/badge)](https://www.codefactor.io/repository/github/chupper100/chup)
